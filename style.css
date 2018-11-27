@@ -6,7 +6,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-a, a:hover {
+a, a:hover, .fas:hover {
   text-decoration: none;
   cursor: pointer;
 }
@@ -100,6 +100,7 @@ a, a:hover {
 
   .nav_bar .navbar_menu #menu_unlock {
     display: block;
+    cursor: pointer;
   }
 
   .nav_bar .navbar_menu #menu_unlock.menu_active, #logo.menu_active {

@@ -4,7 +4,7 @@ var navBarlinks = [
                     { html: 'Home', isButton: false },
                     { html: 'Scopri il corso', isButton: false },
                     { html: 'La nostra storia', isButton: false },
-                    {html: 'Iscriviti', isButton: true}
+                    { html: 'Iscriviti', isButton: true}
                   ];
 
 var navBarRight = document.getElementsByClassName('navbar_right')[0];
