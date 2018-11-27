@@ -1,1 +1,128 @@
 /* Style.css - jquery-hamburger-menu */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  padding: 10px 15px;
+  background: orange;
+  color: white;
+}
+
+
+.hidden_below1000.menu_active {
+  display: block;
+}
+
+.nav_bar {
+  width:100%;
+  height: 100px;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+}
+
+
+
+.nav_bar .navbar_left #logo {
+  margin: 10px 30px;
+  max-width: 100%;
+  height:80px;
+}
+
+.nav_bar .navbar_right {
+  height: 100%;
+  line-height: 100px;
+}
+
+.nav_bar .navbar_right * {
+  font-size: 20px;
+  margin-right: 30px;
+  color: black;
+}
+
+.button.navbar_button {
+  color:white;
+}
+
+.nav_bar .navbar_menu {
+  display: none;
+}
+
+.nav_bar .navbar_menu .dropdown_menu {
+  position:relative;
+  display: none;
+  font-size: 25px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.nav_bar .navbar_menu .dropdown_menu .fa-times-circle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+}
+
+.navbar_menu img {
+  margin: 0px 30px;
+}
+
+@media all and (max-width: 999px) {
+
+  .hidden_below1000 {
+    display: none;
+  }
+
+  .nav_bar.menu_active {
+    height:100vh;
+    width: 100vw;
+    border: none;
+    background:#293F57;
+  }
+
+  .nav_bar .navbar_menu {
+    display: block;
+  }
+
+  .nav_bar .navbar_menu #menu_unlock {
+    display: block;
+  }
+
+  .nav_bar .navbar_menu #menu_unlock.menu_active, #logo.menu_active {
+    display: none;
+  }
+
+  .nav_bar .navbar_menu.menu_active {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav_bar .navbar_menu .dropdown_menu.menu_active {
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  .nav_bar .navbar_menu .dropdown_menu a {
+    text-decoration: underline;
+    color: white;
+  }
+
+}
